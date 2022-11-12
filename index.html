@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-black text-white flex items-center justify-center h-[100vh]">
+    <div class="border-2 border-gray-400 p-4 rounded-lg">
+      <!-- Display -->
+      <div
+        class="h-[22vh] items-end"
+        style="display: flex; flex-direction: column"
+      >
+        <ul id="calcListDisplay"></ul>
+        <div
+          style="display: flex; flex-direction: column; margin-top: 5px"
+          class="items-end"
+        >
+          <div id="calculationsMainDisplay"></div>
+          <div id="resultMainDisplay"></div>
+        </div>
+      </div>
+      <!-- Key Pad -->
+      <div class="font-medium">
+        <!-- First row -->
+        <div class="flex space-x-3 mb-3">
+          <div
+            class="bg-gray-400 h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full key"
+          >
+            AC
+          </div>
+          <div
+            class="bg-gray-400 key h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full"
+          >
+            +/-
+          </div>
+          <div
+            class="bg-gray-400 key h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full"
+          >
+            %
+          </div>
+          <div
+            class="bg-orange-400 key h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full"
+          >
+            /
+          </div>
+        </div>
+        <!-- Second row -->
+        <div class="flex space-x-3 mb-3">
+          <div
+            class="bg-gray-800 key h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full"
+          >
+            7
+          </div>
+          <div
+            class="bg-gray-800 key h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full"
+          >
+            8
+          </div>
+          <div
+            class="bg-gray-800 key h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full"
+          >
+            9
+          </div>
+          <div
+            class="bg-orange-400 key h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full"
+          >
+            x
+          </div>
+        </div>
+        <!-- Third row -->
+        <div class="flex space-x-3 mb-3">
+          <div
+            class="bg-gray-800 key h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full"
+          >
+            4
+          </div>
+          <div
+            class="bg-gray-800 key h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full"
+          >
+            5
+          </div>
+          <div
+            class="bg-gray-800 key h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full"
+          >
+            6
+          </div>
+          <div
+            class="bg-orange-400 key h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full"
+          >
+            -
+          </div>
+        </div>
+        <!-- Fourth row -->
+        <div class="flex space-x-3 mb-3">
+          <div
+            class="bg-gray-800 key h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full"
+          >
+            1
+          </div>
+          <div
+            class="bg-gray-800 key h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full"
+          >
+            2
+          </div>
+          <div
+            class="bg-gray-800 key h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full"
+          >
+            3
+          </div>
+          <div
+            class="bg-orange-400 key h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full"
+          >
+            +
+          </div>
+        </div>
+        <!-- Last row -->
+        <div class="flex space-x-3">
+          <div
+            class="bg-gray-800 key h-[40px] cursor-pointer w-[93px] flex justify-center items-center rounded-full"
+          >
+            0
+          </div>
+          <div
+            class="bg-gray-800 key h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full"
+          >
+            .
+          </div>
+          <div
+            class="bg-orange-400 key h-[40px] cursor-pointer w-[40px] flex justify-center items-center rounded-full"
+          >
+            =
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script3.js"></script>
+</html>
